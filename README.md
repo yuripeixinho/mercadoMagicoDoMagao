@@ -14,7 +14,7 @@ Prepare-se para uma aventura! Começaremos seguindo um roteiro para o cadastro e
 
 ### Clonando Repositório
       
-     git@github.com:yuripeixinho/mercadinhoDoMagao.git
+     git@github.com:yuripeixinho/mercadoMagicoDoMagao.git
 
 ### Banco de Dados
 * Indicar versão do banco de dados
