@@ -53,6 +53,79 @@ Nosso armazém está vazio! Temos que cadastrar nossos instrumentos mágicos!
 para nossa sorte o meu amigo chamado Geovane Pontes Torres (GPT) me emprestou alguns itens que podem ser criados (de forma individual).
 
 
+{
+  "nome": "Flauta Encantada da Serenidade",
+  "tipo": "Sopro",
+  "preco": 499.99,
+  "propriedadeMagica": "Quando tocada suavemente, acalma as tempestades e tranquiliza as mentes inquietas."
+}
+
+{
+  "nome": "Tambores Trovão da Ressurreição",
+  "tipo": "Percussão",
+  "preco": 899.99,
+  "propriedadeMagica": "Seu ritmo desperta os mortos, trazendo-os de volta à vida para uma dança espetacular."
+}
+
+{
+  "nome": "Harpia Harmônica",
+  "tipo": "Corda",
+  "preco": 699.99,
+  "propriedadeMagica": "Ao ser tocada, invoca ventos celestiais e encanta pássaros mágicos para uma sinfonia celestial."
+}
+
+{
+  "nome": "Guitarra das Estrelas Cadentes",
+  "tipo": "Corda",
+  "preco": 999.99,
+  "propriedadeMagica": "Ao tocar uma música, dispara estrelas cadentes no céu, realizando desejos de todos que as veem."
+}
+
+{
+  "nome": "Tambor da Floresta Encantada",
+  "tipo": "Percussão",
+  "preco": 749.99,
+  "propriedadeMagica": "Cada batida cria uma floresta encantada temporária, cheia de criaturas mágicas e plantas exóticas."
+}
+
+{
+  "nome": "Violino das Lágrimas de Cristal",
+  "tipo": "Corda",
+  "preco": 599.99,
+  "propriedadeMagica": "Cada nota tocada transforma as lágrimas em cristais preciosos, trazendo alegria e prosperidade."
+}
+
+{
+  "nome": "Acordeon da Alegria Infinita",
+  "tipo": "Sopro",
+  "preco": 799.99,
+  "propriedadeMagica": "Quando tocado, cria uma aura de felicidade ao redor, fazendo as pessoas dançarem de alegria."
+}
+
+{
+  "nome": "Pandeiro dos Elementos",
+  "tipo": "Percussão",
+  "preco": 649.99,
+  "propriedadeMagica": "Cada batida invoca um elemento da natureza - fogo, água, terra ou ar - para um espetáculo mágico."
+}
+
+{
+  "nome": "Saxofone das Emoções Verdadeiras",
+  "tipo": "Sopro",
+  "preco": 899.99,
+  "propriedadeMagica": "Tocar este saxofone revela as emoções verdadeiras das pessoas ao seu redor, criando conexões profundas."
+}
+
+{
+  "nome": "Piano Fantasma",
+  "tipo": "Teclado",
+  "preco": 1299.99,
+  "propriedadeMagica": "As teclas do piano são tocadas por mãos invisíveis, criando uma melodia assombrosa e cativante."
+}
+
+
+
+
 
 
 
