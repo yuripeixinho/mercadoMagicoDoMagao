@@ -1,8 +1,11 @@
 <div align="center">
-     <img src="./BannerReadme" width="450px">
+     <img src="./BannerReadme.png" width="450px">
 </div>
 
-**É aqui onde a música de torna mágica! Se você está em busca de um violão que toque canções do além, uma bateria que faça todos os espíritos dançarem ou uma flauta que cante canções de fadas, você está no lugar certo! 🧚‍♂️🎸**
+<div align="center">
+</br>
+É aqui onde a música de torna mágica! Se você está em busca de um violão que toque canções do além, uma bateria que faça todos os espíritos dançarem ou uma flauta que cante canções de fadas, você está no lugar certo!🧚‍♂️🎸
+</div>
 
 ### Sobre o projeto
 * Uma API que armazena informações dos instrumentos musicais mágicos 
@@ -22,18 +25,20 @@
 
 
 ### Vamos começar nossa aventura musical interagindo com a API `mercadoMagicoDoMago`.
-<details>
-  <summary>Se você deseja explorar e testar os recursos da nossa API, siga este roteiro passo a passo para uma experiência completa:</summary>
+  Se você deseja explorar e testar os recursos da nossa API, siga este roteiro passo a passo para uma experiência completa:
 
 
 ### 1.0 Cadastrar Usuário
-Temos que criar nosso usuário, pois apenas com ele autenticado somos capazes de fazer as requisições na nossa API.
 
-    {
+Temos que criar nosso usuário, pois apenas com ele autenticado somos capazes de fazer as requisições na nossa API.
+- Método: POST
+- **Rota**: `/api/Usuario`
+  ```json
+  {
       "nome": "Usuario",
       "email": "usuario@gmail.com",
       "senha": "123456"
-    }
+  }
 Agora que temos nosso usuário, temos que efetuar a autenticação e logo seremos capazes de acessar as demais rotas da API.
 
 Vamos começar nossa aventura musical interagindo com a API `InstrumentoMagico`.
@@ -86,7 +91,6 @@ Adeus, Flauta da Lua Encantada! 😢
 
 -   **Método**: DELETE
 -   **Rota**: `/api/InstrumentoMagico/:{ID da Flauta da Lua Encantada}`
-</details>
 
 ### Endpoints da API `InstrumentoMagico`
 
