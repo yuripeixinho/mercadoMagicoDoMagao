@@ -29,13 +29,16 @@
 
 
 ### 1.0 Cadastrar Usuário
-Temos que criar nosso usuário, pois apenas com ele autenticado somos capazes de fazer as requisições na nossa API.
 
-    {
+Temos que criar nosso usuário, pois apenas com ele autenticado somos capazes de fazer as requisições na nossa API.
+- Método: POST
+- **Rota**: `/api/Usuario`
+  ```json
+  {
       "nome": "Usuario",
       "email": "usuario@gmail.com",
       "senha": "123456"
-    }
+  }
 Agora que temos nosso usuário, temos que efetuar a autenticação e logo seremos capazes de acessar as demais rotas da API.
 
 Vamos começar nossa aventura musical interagindo com a API `InstrumentoMagico`.
