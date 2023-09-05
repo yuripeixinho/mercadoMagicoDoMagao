@@ -1,14 +1,16 @@
+
+
 # Mercadinho do Magão!
 Bem-vindo ao "**Mercadinho do Magão**" - Onde a música se torna mágica! 
 
-### Sobre o projeto
-* Uma API que armazena informações dos instrumentos musicais mágicos - *Versão 6.0 do .NET*;
-* Implementação de CRUD usando Entity Framework Core como ORM;
-* Sistema de autenticação básica e princípios SOLID
-
 Se você está em busca de um violão que toque canções do além, uma bateria que faça todos os espíritos dançarem ou uma flauta que cante canções de fadas, você está no lugar certo! 🧚‍♂️🎸
 
-Prepare-se para uma aventura! Começaremos seguindo um roteiro para o cadastro e as requisições básicas. Depois disso, você terá a liberdade de explorar nossos corredores mágicos à vontade. Vamos lá!
+### Sobre o projeto
+* Uma API que armazena informações dos instrumentos musicais mágicos 
+*  *Versão 6.0 do .NET*;
+* Implementação de CRUD usando Entity Framework Core como ORM;
+* Sistema de autenticação básica 
+* princípios SOLID
 
 ## Instalação
 
@@ -17,111 +19,96 @@ Prepare-se para uma aventura! Começaremos seguindo um roteiro para o cadastro e
      git@github.com:yuripeixinho/mercadoMagicoDoMagao.git
 
 ### Banco de Dados
-* Indicar versão do banco de dados
-* Instrução para criar o banco de dados e tabelas necessárias (pode ser um script SQL ou um README específico)
+* Para o banco de dados é utilizado SQLite. O banco já está previamente com população;
 
 
+### Vamos começar nossa aventura musical interagindo com a API `mercadoMagicoDoMago`.
+<details>
+  <summary>Se você deseja explorar e testar os recursos da nossa API, siga este roteiro passo a passo para uma experiência completa:</summary>
 
-## Rotas da API
-Se você deseja explorar e testar os recursos da nossa API, siga este roteiro passo a passo para uma experiência completa:
 
 ### Cadastrar Usuário
 Temos que criar nosso usuário, pois apenas com ele autenticado somos capazes de fazer as requisições na nossa API.
 
-    POST https://localhost:7011/api/Usuario
-   
-    Corpo da solicitação JSON: 
     {
-      "nome": "Pedro Henrique",
-      "email": "ph@gmail.com",
+      "nome": "Usuario",
+      "email": "usuario@gmail.com",
       "senha": "123456"
     }
 Agora que temos nosso usuário, temos que efetuar a autenticação e logo seremos capazes de acessar as demais rotas da API.
-### Cadastrar Instrumento Mágico
-Nosso armazém está vazio! Temos que cadastrar nossos instrumentos mágicos!
-    
-    https://localhost:7011/api/InstrumentoMagico
-    
-    Corpo da solicitação JSON:
-    {
-      "nome": "Violão do além",
-      "tipo": "Corda",
-      "preco": 799.99,
-      "propriedadeMagica": "Canções do além são tocadas e todos os espíritos ao
-       redor se manifestam"
-    }
-para nossa sorte o meu amigo chamado Geovane Pontes Torres (GPT) me emprestou alguns itens que podem ser criados (de forma individual).
 
+Vamos começar nossa aventura musical interagindo com a API `InstrumentoMagico`.
 
-{
-  "nome": "Flauta Encantada da Serenidade",
-  "tipo": "Sopro",
-  "preco": 499.99,
-  "propriedadeMagica": "Quando tocada suavemente, acalma as tempestades e tranquiliza as mentes inquietas."
-}
+### 1.1. Listando os Instrumentos Mágicos
+Vamos ver quais instrumentos mágicos misteriosos estão disponíveis no mundo da magia!
+- **Método**: GET
+- **Rota**: `/api/InstrumentoMagico`
 
-{
-  "nome": "Tambores Trovão da Ressurreição",
-  "tipo": "Percussão",
-  "preco": 899.99,
-  "propriedadeMagica": "Seu ritmo desperta os mortos, trazendo-os de volta à vida para uma dança espetacular."
-}
+### 1.2. Criando um Novo Instrumento Mágico
+Vamos criar um instrumento mágico especial. 😄
+- **Método**: POST
+- **Rota**: `/api/InstrumentoMagico`
+  ```json
+  {
+    "nome": "Flauta da Lua Encantada",
+    "tipo": "Sopro",
+    "preco": 599.99,
+    "propriedadeMagica": "Faz a lua brilhar ainda mais intensamente quando tocada à noite."
+  }
+### 1.3. Consultando um Instrumento Mágico Específico
+Vamos dar uma olhada na Flauta da Lua Encantada que acabamos de criar!
+-   **Método**: GET
+-   **Rota**: `/api/InstrumentoMagico/:{ID da Flauta da Lua Encantada}`
 
-{
-  "nome": "Harpia Harmônica",
-  "tipo": "Corda",
-  "preco": 699.99,
-  "propriedadeMagica": "Ao ser tocada, invoca ventos celestiais e encanta pássaros mágicos para uma sinfonia celestial."
-}
+### 1.4. Atualizando um Instrumento Mágico
+Vamos melhorar a propriedade mágica da Flauta da Lua Encantada!
+-   **Método**: PUT
+- **Rota**: `/api/InstrumentoMagico/:{ID da Flauta da Lua Encantada}`
+  ```json
+  {
+    "nome": "Flauta da Lua Encantada",
+    "tipo": "Sopro",
+    "preco": 599.99,
+    "propriedadeMagica": "Faz a lua brilhar ainda mais intensamente quando tocada à noite."
+  }
 
-{
-  "nome": "Guitarra das Estrelas Cadentes",
-  "tipo": "Corda",
-  "preco": 999.99,
-  "propriedadeMagica": "Ao tocar uma música, dispara estrelas cadentes no céu, realizando desejos de todos que as veem."
-}
+### 1.6. Calculando o Preço Total por Tipo de Instrumento
+Nosso chefe pediu para que a gente veja o preço total que os instrumentos que possuem o **tipo corda** estão custando no total.
+-   **Método**: GET
+-   **Rota**: `/api/InstrumentoMagico/CalculateTotalPriceByType`
 
-{
-  "nome": "Tambor da Floresta Encantada",
-  "tipo": "Percussão",
-  "preco": 749.99,
-  "propriedadeMagica": "Cada batida cria uma floresta encantada temporária, cheia de criaturas mágicas e plantas exóticas."
-}
+### 1.7. Pesquisando por Propriedade Mágica
+Vamos encontrar todos os instrumentos que têm o poder de fazer algo brilhar! ✨
+-   **Método**: GET
+-   **Rota**: `/api/InstrumentoMagico/SearchByMagicProperty?propriedade=brilhar`
 
-{
-  "nome": "Violino das Lágrimas de Cristal",
-  "tipo": "Corda",
-  "preco": 599.99,
-  "propriedadeMagica": "Cada nota tocada transforma as lágrimas em cristais preciosos, trazendo alegria e prosperidade."
-}
+### 1.5. Excluindo um Instrumento Mágico
+Adeus, Flauta da Lua Encantada! 😢
 
-{
-  "nome": "Acordeon da Alegria Infinita",
-  "tipo": "Sopro",
-  "preco": 799.99,
-  "propriedadeMagica": "Quando tocado, cria uma aura de felicidade ao redor, fazendo as pessoas dançarem de alegria."
-}
+-   **Método**: DELETE
+-   **Rota**: `/api/InstrumentoMagico/:{ID da Flauta da Lua Encantada}`
+</details>
 
-{
-  "nome": "Pandeiro dos Elementos",
-  "tipo": "Percussão",
-  "preco": 649.99,
-  "propriedadeMagica": "Cada batida invoca um elemento da natureza - fogo, água, terra ou ar - para um espetáculo mágico."
-}
+### Endpoints da API `InstrumentoMagico`
 
-{
-  "nome": "Saxofone das Emoções Verdadeiras",
-  "tipo": "Sopro",
-  "preco": 899.99,
-  "propriedadeMagica": "Tocar este saxofone revela as emoções verdadeiras das pessoas ao seu redor, criando conexões profundas."
-}
+| Método | Rota                                  | Descrição                                             |
+|--------|---------------------------------------|-------------------------------------------------------|
+| GET    | `/api/InstrumentoMagico`             | Retorna todos os instrumentos mágicos disponíveis.   |
+| POST   | `/api/InstrumentoMagico`             | Cria um novo instrumento mágico.                     |
+| GET    | `/api/InstrumentoMagico/{id}`        | Retorna um instrumento mágico específico pelo ID.    |
+| PUT    | `/api/InstrumentoMagico/{id}`        | Atualiza um instrumento mágico específico pelo ID.   |
+| DELETE | `/api/InstrumentoMagico/{id}`        | Exclui um instrumento mágico específico pelo ID.     |
+| GET    | `/api/InstrumentoMagico/CalculateTotalPriceByType` | Calcula o preço total de instrumentos mágicos por tipo. |
+| GET    | `/api/InstrumentoMagico/SearchByMagicProperty`   | Pesquisa instrumentos mágicos por propriedade mágica.  |
 
-{
-  "nome": "Piano Fantasma",
-  "tipo": "Teclado",
-  "preco": 1299.99,
-  "propriedadeMagica": "As teclas do piano são tocadas por mãos invisíveis, criando uma melodia assombrosa e cativante."
-}
+### Endpoints da API `Usuario`
+
+| Método | Rota                   | Descrição                                       |
+|--------|------------------------|-------------------------------------------------|
+| GET    | `/api/Usuario/{id}`   | Retorna um usuário específico pelo ID.         |
+| DELETE | `/api/Usuario/{id}`   | Exclui um usuário específico pelo ID.           |
+| POST   | `/api/Usuario`        | Cria um novo usuário.                           |
+
 
 
 
