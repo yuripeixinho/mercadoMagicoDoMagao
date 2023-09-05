@@ -24,7 +24,7 @@
   <summary>Se você deseja explorar e testar os recursos da nossa API, siga este roteiro passo a passo para uma experiência completa:</summary>
 
 
-### Cadastrar Usuário
+### 1.0 Cadastrar Usuário
 Temos que criar nosso usuário, pois apenas com ele autenticado somos capazes de fazer as requisições na nossa API.
 
     {
