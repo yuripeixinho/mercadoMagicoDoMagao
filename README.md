@@ -25,8 +25,7 @@
 
 
 ### Vamos começar nossa aventura musical interagindo com a API `mercadoMagicoDoMago`.
-<details>
-  <summary>Se você deseja explorar e testar os recursos da nossa API, siga este roteiro passo a passo para uma experiência completa:</summary>
+  Se você deseja explorar e testar os recursos da nossa API, siga este roteiro passo a passo para uma experiência completa:
 
 
 ### 1.0 Cadastrar Usuário
@@ -89,7 +88,6 @@ Adeus, Flauta da Lua Encantada! 😢
 
 -   **Método**: DELETE
 -   **Rota**: `/api/InstrumentoMagico/:{ID da Flauta da Lua Encantada}`
-</details>
 
 ### Endpoints da API `InstrumentoMagico`
 
