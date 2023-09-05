@@ -1,4 +1,6 @@
-
+<div align="center">
+     <img src="./BannerReadme" width="450px">
+</div>
 
 **É aqui onde a música de torna mágica! Se você está em busca de um violão que toque canções do além, uma bateria que faça todos os espíritos dançarem ou uma flauta que cante canções de fadas, você está no lugar certo! 🧚‍♂️🎸**
 
