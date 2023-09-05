@@ -20,7 +20,7 @@ internal class Program
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen(c =>
         {
-            c.SwaggerDoc("v1", new OpenApiInfo { Title = "Armazem do Mago!", Version = "v1" });
+            c.SwaggerDoc("v1", new OpenApiInfo { Title = "Mercadinho do Magão", Version = "v1" });
 
             c.AddSecurityDefinition("Basic", new OpenApiSecurityScheme
             {
